@@ -12,6 +12,7 @@ import {  useState } from "react";
 import axios from "axios";
 
 function App() {
+ 
   const [data, setData] = useState({
     temparature: 232.15,
     city: "ANTARCTICA",
@@ -22,9 +23,11 @@ function App() {
     speed: 3.44,
   });
 
+   
  
 
   const [city, setCity] = useState("");
+  
   const handle = () => {
     if (city !== "") {
       let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0afba858d74acf07dcdb6993e6fbd8d4&unit=metric`;
@@ -66,6 +69,7 @@ function App() {
       backgroundImage = desert;
     }
   }
+ 
   return (
     <div className="App" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="main">

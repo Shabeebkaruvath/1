@@ -29,6 +29,9 @@
   text-transform: uppercase;
   padding-right: 2px;
 }
+.main input[type="text"] {
+  font-size: inherit;
+}
 .main input:hover {
   width: 40%;
   height: 5vh;
