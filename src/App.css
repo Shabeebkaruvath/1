@@ -17,7 +17,7 @@
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
-  text-transform: uppercase;
+   
 }
 .main input {
   width: 40%;
